@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weight Converter</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-4 text-center">Weight Converter</h1>
+          <form>
+            <div class="form-group text-center">
+              <div class=" text-center">
+                <input
+                  type="radio"
+                  id="pounds"
+                  value="pounds"
+                  name="weight"
+                  class="form-control"
+                />
+                <label for="pounds">Pounds</label>
+              </div>
+              <div class="text-center">
+                <input
+                  type="radio"
+                  id="kilograms"
+                  value="kilograms"
+                  name="weight"
+                  class="form-control"
+                />
+                <label for="kilograms">Kilograms</label>
+              </div>
+              <div class=" text-center">
+                <input
+                  type="radio"
+                  id="grams"
+                  value="grams"
+                  name="weight"
+                  class="form-control"
+                />
+                <label for="grams">Grams</label>
+              </div>
+              <div class=" text-center">
+                <input
+                  type="radio"
+                  id="ounces"
+                  value="ounces"
+                  name="weight"
+                  class="form-control"
+                />
+                <label for="ounces">Ounces</label>
+              </div>
+            </div>
+            <input
+              id="MainInput"
+              type="number"
+              class="form-control form-control-lg"
+              placeholder="Choose measure..."
+            />
+          </form>
+          <div class="m-5" id="output">
+            <div class="card mx-auto mb-2">
+              <div class="card-body bg-warning ">
+                <div class="row">
+                  <h4 class="col-sm-6 text-center">Pounds:</h4>
+                  <div
+                    class="col-sm-6 text-center Output"
+                    id="poundsOutput"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="card mx-auto mb-2">
+              <div class="card-body bg-primary">
+                <div class="row">
+                  <h4 class="col-sm-6 text-center">Kilograms:</h4>
+                  <div class="col-sm-6 text-center Output" id="kgOutput"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card mx-auto mb-2">
+              <div class="card-body bg-success ">
+                <div class="row">
+                  <h4 class="col-sm-6 text-center">Grams:</h4>
+                  <div
+                    class="col-sm-6 text-center Output"
+                    id="gramsOutput"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="card mx-auto mb-2">
+              <div class="card-body bg-danger ">
+                <div class="row">
+                  <h4 class="col-sm-6 text-center">Ounces:</h4>
+                  <div
+                    class="col-sm-6 text-center Output"
+                    id="ouncesOutput"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
